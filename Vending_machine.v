@@ -34,6 +34,9 @@ module ven_machine(
                 else if (in == 2'b10) begin
                     n_state = s2;
                 end  
+                else begin
+                    n_state = s0;
+                end
             end
             
             s1: begin
@@ -48,6 +51,9 @@ module ven_machine(
                     n_state = s0;
                     out = 1;
                 end 
+                else begin
+                    n_state = s1;
+                end
             end
             
             s2: begin
@@ -63,6 +69,9 @@ module ven_machine(
                     n_state = s0;
                     out = 1;
                     change = 2'b01;
+                end
+                else begin
+                    n_state = s2;
                 end
             end
             
