@@ -68,6 +68,8 @@ module ven_machine(
             
             default: begin
                 n_state = s0;
+                out     = 0;
+                change  = 2'b00;
             end
         endcase
     end
