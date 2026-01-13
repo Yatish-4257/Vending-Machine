@@ -1,4 +1,4 @@
-`include "ven_machine.v"
+
 module ven_machine_test;
     reg clk;
     reg [1:0] in;
